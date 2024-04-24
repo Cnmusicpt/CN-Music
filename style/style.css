@@ -7,6 +7,12 @@
     font-family: 'Inter', sans-serif;
 }
 
+.nt{
+    text-align: center;
+}
+
+
+
 body {
     background-color: #f1f6fc31;
 }
@@ -25,7 +31,7 @@ p {
 }
 
 h1 {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.671);
+    text-shadow: 2px 2px 11px rgb(0, 0, 0);
 }
 
 #bnn {
@@ -49,6 +55,8 @@ h1 {
     margin: 0 auto;
     padding: 0 5%;
 }
+
+
 
 .btn {
     background-color: #4f9cf9;
@@ -343,6 +351,7 @@ nav .close-icon {
     margin: 20px;
     transition: .3s;
     cursor: pointer;
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.233);
 }
 
 .servicos .row-card-item:hover {
@@ -384,6 +393,7 @@ nav .close-icon {
 
 .dados .dados-item img {
     background-color: #4f9cf9;
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.233);
     border-radius: 14px;
     padding: 10px;
     margin-bottom: 15px;
@@ -638,3 +648,4 @@ nav .close-icon {
         width: 70%;
     }
 }
+

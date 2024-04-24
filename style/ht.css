@@ -1,0 +1,76 @@
+/* style no CN MUSIC*/
+span{
+    color: #007bff;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url(../img/samsung-605439_1280.jpg);
+}
+.login-container{
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 34vh;
+    height: 62vh;
+}
+
+p{
+    text-align: center;
+  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h6{
+    text-align: center;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+h1{
+
+    text-align: center;
+
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+label{
+    margin-bottom: 8px;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input{
+    padding: 8px;
+    margin-bottom: 16px;
+    border: #fc1a1a;
+    border-radius:4px;
+}
+button{
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 54px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+.img{
+    text-align: center;
+}
+

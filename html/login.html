@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/y.css">
+    <title>Iniciar Sessão</title>
+    <link rel="icon" href="../img/R.jpg">
+</head>
+<body>
+    
+    
+<div class="login-container">
+    <h6>Inicio de Sessão no Nosso Site, ou podes ignorar para continuar no site...</h6>
+ 
+  <div class="img">
+  <img src="../img/usar.png"  alt="user img">
+</div>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="nome de utilizador" autofocus required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="insira a sua passeword" autofocus required>
+        <button type="button" class="benjamim" onclick="login()">Login</button>
+        
+
+        <br>
+        <button type="button" onclick="criarconta()">Creat Count</button>
+
+        <p>OU</p>
+
+       <button type="button" onclick="passar()">Ignorar sessão</button>
+      <br>
+      
+      <a href="../new project/html/recuperar_conta.html"><p>Recuperar Conta</p></a>  
+
+     <br><br>
+
+     <p class="suggestions">Ou crie com:</p>
+
+      <div class="providers">
+        <button onclick="createWith('facebook')">Facebook</button>
+        <button onclick="createWith('google')">Google</button>
+        <button onclick="createWith('twitter')">Twitter</button>
+      </div>
+      
+
+    
+
+
+
+
+
+
+
+
+
+
+</div>
+</form>
+
+
+
+
+<script>
+
+    function createWith(provider) {
+  alert("Criando conta com " + provider);
+}
+
+document.getElementById("signup-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  let username = document.getElementById("username").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  // Aqui você pode adicionar a lógica para criar a conta com os dados fornecidos
+  alert("Criando conta com nome de usuário: " + username + ", email: " + email);
+});
+
+    function login(){
+        //simulando uma autnticação bem sucedida
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+     
+        if (username==="CN-Music" && password === "00000") {
+            //se a autenticação for bem-sucedida, redicione para pagina inicial
+            
+            window.location.href="../login/pagina_inicial.html";
+            } else {
+                // caso contrário, exiba uma mensagem de erro (cê pode personalizar conforme necessário)
+                alert("Nome de Usuário ou Passe Incorrecta. Tente Novamente!");
+
+
+
+        }
+    }
+
+    
+
+    
+ 
+    function passar(){
+        
+        window.location.href="../index.html";
+
+        alert("você decidiu continuar sem sessão")
+    }
+
+
+    function criarconta(){
+        
+        window.location.href="../html/creat_acount.html";
+
+        alert("Creat new acount CN-Music")
+    }
+</script>
+
+
+</body>
+</html>

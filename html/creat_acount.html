@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/ht.css">
+    <title>Criar Conta</title>
+    <link rel="icon" href="../img/R.jpg">
+</head>
+<body>
+   
+    
+<div class="login-container">
+    <h6>Cria uma conta cn-music para te conectares no mundo de sons...</h6>
+ 
+  <div class="img">
+<img src="../img/usar2.png" alt="">
+  </div>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"  placeholder="seu nome de utilizador" required autofocus maxlength="12">
+
+     
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"  placeholder="cria uma passeword forte" required autofocus maxlength="6">
+
+
+   <label for="username">Email:</label>
+   <input type="email" id="email" name="email"  placeholder="seuemail@gmail.com" autofocus required>
+        <button type="button" onclick="conta()">Criar Conta</button>
+
+
+
+        <p> Seja Bem Vindo Na Nossa Comunidade </p>
+
+ <p>CN-Music </p>
+
+ 
+
+
+
+
+
+
+
+
+
+</div>
+</form>
+
+
+<script>
+    function conta(){
+        //simulando uma autnticação bem sucedida
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+        
+     
+        if (username==""  && password === "00")
+        
+         {
+            //se a autenticação for bem-sucedida, redicione para pagina inicial
+            window.location.href="../index.html";
+            } else {
+                
+                // caso contrário, exiba uma mensagem de erro (cê pode personalizar conforme necessário)
+                alert("Lamentamos de momento, não será possivel criar...!");
+
+
+        }
+    }
+
+   
+
+  
+</script>
+
+
+</body>
+</html>
