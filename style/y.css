@@ -6,6 +6,10 @@
     text-align: center;
     
   
+#message {
+    margin-top: 10px;
+    color: red;
+}
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
