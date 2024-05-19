@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat de Música</title>
+  <link rel="stylesheet" href="../style/chat.css">
+</head>
+<body>
+  <div class="chat-container" id="chat-container">
+    <div class="chat-box" id="chat-box">
+      <div class="chat-msg received">Olá! Bem-vindo ao chat de música.</div>
+      <div class="chat-msg received">Ouve uma boa música e seja feliz</div>
+    </div>
+    <audio src="../music/Vulgo FK - Perdas e Ganhos.mp3" controls autoplay placeholder="fff"></audio>
+    <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+    <button id="send-btn">Enviar</button>
+  </div>
+  <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const chatBox = document.getElementById('chat-box');
+    const userInput = document.getElementById('user-input');
+    const sendBtn = document.getElementById('send-btn');
+  
+    sendBtn.addEventListener('click', function() {
+      const userMsg = userInput.value;
+      if (userMsg.trim() !== '') {
+        addMessage('sent', userMsg);
+        userInput.value = '';
+        simulateResponse(userMsg);
+      }
+    });
+  
+    function addMessage(type, text) {
+      const msgDiv = document.createElement('div');
+      msgDiv.classList.add('chat-msg', type);
+      msgDiv.textContent = text;
+      chatBox.appendChild(msgDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  
+    function simulateResponse(userMsg) {
+      setTimeout(function() {
+        const responseMsg = generateResponse(userMsg);
+        addMessage('received', responseMsg);
+      }, 1000);
+    }
+  
+    function generateResponse(userMsg) {
+      // Aqui você pode adicionar lógica para gerar respostas simuladas com base na mensagem do usuário
+      // Por exemplo, você pode ter uma lista de frases pré-definidas sobre música e retornar uma delas aleatoriamente.
+      const responses = [
+        'Entre em Contacto apartir do nosso email: cnmusicpt.@gmail.com',
+        'Entre em Contacto na nossa página do facebook: https://facebook.com/cnmusic.ao',
+        'Podes te tornar um membro ou parceiro CN-Music',
+        'Fale com o CEO ou Gestor de Marketing',
+        
+      ];
+      return responses[Math.floor(Math.random() * responses.length)];
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const contentDiv = document.getElementById('content');
+    const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+    let index = 2;
+    const speed = 240 // Velocidade de escrita em milissegundos
+
+    function writeText() {
+        contentDiv.textContent += text[index];
+        index++;
+
+        if (index < text.length) {
+            setTimeout(writeText, speed);
+          
+        }
+    }
+
+    writeText();
+});
+
+
+
+
+
+
+  
+  </script>
+  <script src="../js/js.js"></script>
+
+</body>
+</html>

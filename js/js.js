@@ -18,6 +18,20 @@ ul.addEventListener("click", (el) => {
 
 btnSearch.addEventListener("click", (el) => {
     search.value = "";
-    alert("Esta funçao ainda nao esta funcionando, fale com o Pedro Moniz.");
+    alert("Esta função ainda não está funcionando, fale com a Web Code.");
 });
+
+baixar1.addEventListener("click", (el) => {
+    search.value = "";
+    alert("Ops! Lamentamos já se fez mais de 1500 Downloads por hoje. Espere até a próxima atualização...");
+   
+});
+
+
+lo.addEventListener("click", (el) => {
+    search.value = "";
+    alert("Ops! Lamentamos mais de 2100 Downloads. Por agora somente por ouvir...");
+   
+});
+
 

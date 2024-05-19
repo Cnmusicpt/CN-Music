@@ -18,17 +18,17 @@
          <div id="bnn">
            <div class="container">
             <nav>
-              <a href="../index.html" id="aLogo"
+              <a href="pagina_inicial.html" id="aLogo"
                 ><h3 id="hLogo"><span id="sLogo">CN</span> Music</h3></a
               >
               <ul class="ul" id="ul">
-                <a href="../index.html">Home</a>
-                <a href="sobre.html">Novidades</a>
-                <a href="servicos.html">+Tocadas</a>
-                <a href="album.html">Album</a>
-                <a href="clip.html">Video</a>
-                <a href="contacto.html">Musicas</a>
-                <a class="btn" href="login.html">Login</a>
+                <a href="pagina_inicial.html">Home</a>
+                <a href="novidades.html">Novidades</a>
+                <a href="tocadas.html">+Tocadas</a>
+                <a href="#">Album</a>
+                <a href="#">Video</a>
+               <a href="chat.html">Chat</a>
+                <a class="btn" href="mp3.html">Músicas</a>
                 <div class="close-icon">
                   <i class="fa fa-times-circle" id="menu-mobile-remove"></i>
                 </div>
@@ -143,20 +143,56 @@
                 <p class="nome-servico">  <a href="https://www.mediafire.com/file/ugr2ad31ieakyvw/Tilson_Janotta_-_Borbuleta_%2528Prod.Sky_Beats%2529.mp3/file" ><img src="../img/download-(1).png" width="190" height="70" alt=""></a> </p>
               </div>
             </div>
+            <br>
+
+            <div class="row-card-item">
+              <div class="row-card-img">
+                
+              </div>
+              <br />
+              <p class="nome-servico">
+                <strong>Vulgo FK - Comprimisso</strong>
+              </p>
+              <div class="music">
+                <audio
+                  src="../music/Vulgo FK - Comprimisso .mp3"
+                  controls
+                ></audio>
+                <p class="nome-servico">  <a href="https://www.mediafire.com/file/wjn9blzy0k2gu1r/Djeisan_-_MEU_GANG__%2528Hosted_HUSTLE_STUDIOS%2529.mp3/file" ><img src="../img/download-(1).png" width="190" height="70" alt=""></a> </p>
+              </div>
+            </div>
+
+            <div class="row-card-item">
+              <div class="row-card-img">
+                
+              </div>
+              <br />
+              <p class="nome-servico">
+                <strong>Cjota feat. Aka Rasta - Território</strong>
+              </p>
+              <div class="music">
+                <audio
+                  src="../music/Cjota feat. Aka Rasta - Território.mp3"
+                  controls
+                ></audio>
+                <p class="nome-servico">  <a href="#" ><img src="../img/download-(1).png" width="190" height="70" alt=""></a> </p>
+              </div>
+            </div>
+          
   
             <div class="row-card-item">
               <div class="row-card-img">
                 
               </div>
               <br />
-              <p class="nome-servico"><strong>Two Dope - Part. 2</strong></p>
-             
+              <p class="nome-servico"><strong>Two Dope - Parte 2</strong></p>
               <div class="music">
                 <audio
-                  src="../music/"
+                  src="../music/TWO DOPE - Part 2.mp3"
                   controls
-                ></audio>
-                <p class="nome-servico">  <a href="" ><img src="../img/download-(1).png" width="190" height="70" alt=""></a> </p>
+                ></audio> 
+                <p class="nome-servico"> 
+                  <a href="#" ><img src="../img/download-(1).png" width="190" height="70" alt="" id="baixar"></a> </p>
               </div>
             </div>
           </div>
@@ -194,15 +230,22 @@
     <footer class="footer">
         <div class="container">
             <div class="links">
-                <a href="facebook.com/"> <i class="fa fa-facebook"></i> </a>
+                <a href="facebook.com/cnmusicao"> <i class="fa fa-facebook"></i> </a>
                 <a href="instagram.com"> <i class="fa fa-instagram"></i></a>
                 <a href="x.com"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
                 <a href="youtube.com"><i class="fa fa-youtube"></i></a>
                 <a href="github.com"> <i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
-            <p>Desenvolvido por Pedro Moniz & Web Down</p>
+            <p>Desenvolvido por Web Code & Pedro Moniz </p>
         </div>
      </footer>
      <script src="../js/js.js"></script>
+     <script>
+      baixar.addEventListener("click", (el) => {
+    search.value = "";
+    alert("Ops! Lamentamos já se fez mais de 320  Downloads por hoje. Espere até a próxima atualização...");
+   
+});
+     </script>
    </body>
 </html>
